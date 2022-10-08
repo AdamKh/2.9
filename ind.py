@@ -6,13 +6,13 @@ import time
 
 def br_check(s):
     start = time.perf_counter()
-    meetings = 0
+    m = 0
     for c in s:
         if c == '(':
-            meetings += 1
+            m += 1
         elif c == ')':
-            meetings -= 1
-            if meetings < 0:
+            m -= 1
+            if m < 0:
                 return False
 
     print(f"Время выполнения функции = {time.perf_counter() - start}")
