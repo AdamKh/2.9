@@ -16,7 +16,7 @@ def br_check(s):
                 return False
 
     print(f"Время выполнения функции = {time.perf_counter() - start}")
-    return meetings == 0
+    return m == 0
 
 
 if __name__ == '__main__':
